@@ -31,10 +31,28 @@
 }
 
 .project {
-    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
     padding: 15px;
+    height: 250px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+.project h4 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.project p {
+    flex-grow: 1;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 1em;
+}
 .projects-grid {
     display: grid;
     gap: 20px;
@@ -45,6 +63,13 @@
 .main-content {
     grid-area: main-content;
     border: 2px solid salmon;
+}
+
+.project-actions {
+    display: flex;
+    width: 70px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .announcements-container {
