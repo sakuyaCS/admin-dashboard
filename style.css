@@ -22,7 +22,7 @@
 
 .content-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 300px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "main-content announcements"
@@ -43,10 +43,12 @@
 }
 
 .main-content {
+    grid-area: main-content;
     border: 2px solid salmon;
 }
 
 .announcements-container {
+    grid-area: announcements;
     display: grid;
     border: 2px solid purple;
     
