@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 
 .main-container {
     display: grid;
@@ -91,6 +98,27 @@
 .sidebar {
     grid-area: sidebar;
     border: 2px solid red;
+}
+
+.sidebar-items {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-items svg {
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    fill: #333;
+}
+
+.dashboard-static {
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    fill: #333;
 }
 
 .content-container {
