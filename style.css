@@ -221,9 +221,22 @@ body {
     
 }
 
-.trending-users {
-    grid-area: trending;
-    border: 2px solid yellowgreen
+.trending-item {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    gap: 5px;
+
 }
 
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trending-item img {
+    height: 20px;
+    width: auto;
+}
 
