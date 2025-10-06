@@ -218,13 +218,52 @@ body {
     cursor: pointer;
 }
 
+
 .announcements-container {
-    grid-area: announcements;
     display: grid;
-    border: 2px solid purple;
-    height: 50vh;
-    
+    grid-area: announcements;
+    padding: 20px;
+
 }
+
+.announcements-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.announcements-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.announcement-item {
+    padding: 15px 0;
+}
+
+.announcement-item:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.announcement-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: black;
+}
+
+.announcement-item p {
+    margin: 0;
+    font-size: 0.85em;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
 
 .trending-section-container {
     grid-area: trending;
