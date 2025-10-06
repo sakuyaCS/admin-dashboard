@@ -156,11 +156,15 @@ body {
 .content-container {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
     "main-content announcements"
     "main-content trending";
     background-color: #e2e8f0;
+}
+
+.project-container {
+    padding: 50px;
 }
 
 .project {
@@ -218,14 +222,28 @@ body {
     grid-area: announcements;
     display: grid;
     border: 2px solid purple;
+    height: 50vh;
     
+}
+
+.trending-section-container {
+    grid-area: trending;
+    padding: 20px;
+}
+
+.trending-section-container h3 { 
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .trending-item {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     flex-direction: row;
-    gap: 5px;
+    gap: 15px;
+    align-items: center;
 
 }
 
@@ -234,6 +252,13 @@ body {
     flex-direction: column;
 }
 
+.trending-users-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
 
 .trending-item img {
     height: 20px;
