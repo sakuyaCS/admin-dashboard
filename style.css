@@ -155,17 +155,15 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 280px;
     grid-template-areas: 
-    "main-content announcements"
-    "main-content trending";
+    "main-content right-column";
     background-color: #e2e8f0;
-    max-height: calc(100vh - 180px);
+    height: calc(100vh - 215px);
 }
 
 .project-container {
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .project {
@@ -174,7 +172,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-left: 8px solid #f0b429;
     display: flex;
-    padding: 20px;
+    padding: 15px;
     justify-content: space-between;
     flex-direction: column;
     min-height: 0;
@@ -195,16 +193,23 @@ body {
 }
 .projects-grid {
     display: grid;
-    gap: 15px;
+    gap: 12px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    max-height: 100%
+    max-height: 100%;
 }
 
 .main-content {
     grid-area: main-content;
     overflow-y: auto;
 
+}
+
+.right-column {
+    grid-area: right-column;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .project-actions {
@@ -223,23 +228,21 @@ body {
 }
 
 .announcements-container, .trending-section-container {
-    overflow-y: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
+    flex-direction: column;
     max-height: 100%;
-}
-
-
-.announcements-container {
-    display: grid;
-    grid-area: announcements;
-    padding: 20px;
-
 }
 
 .announcements-card {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
+    overflow-y: auto;
+    flex: 1;
 }
 
 .announcements-container h3 {
@@ -250,13 +253,13 @@ body {
 }
 
 .announcements-item {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .announcements-item:not(:last-child) {
     border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .announcements-item h4 {
@@ -274,11 +277,6 @@ body {
 }
 
 
-.trending-section-container {
-    grid-area: trending;
-    padding: 20px;
-}
-
 .trending-section-container h3 { 
     margin-top: 0;
     margin-bottom: 15px;
@@ -288,8 +286,8 @@ body {
 
 .trending-item {
     display: flex;
-    padding: 10px 0;
-    gap: 15px;
+    padding: 8px 0;
+    gap: 12px;
     align-items: center;
     border-bottom: 1px solid #e5e7eb;
 
@@ -308,7 +306,9 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
+    overflow-y: auto;
+    flex: 1;
     
 }
 
