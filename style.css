@@ -269,3 +269,28 @@ body {
     width: auto;
 }
 
+.trending-avatar {
+    border-radius: 8px;
+}
+
+.avatar-yellow {
+    background-color: #fbbf24;
+
+}
+
+.avatar-blue {
+    background-color: #a4c1e5;
+
+}
+
+.avatar-pink {
+    background-color: #cd98b6
+}
+
+.avatar-red {
+    background-color: #f87171;
+}
+
+.avatar-grey {
+    background-color: grey;
+}
