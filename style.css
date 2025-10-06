@@ -241,10 +241,14 @@ body {
 .trending-item {
     display: flex;
     padding: 10px 0;
-    flex-direction: row;
     gap: 15px;
     align-items: center;
+    border-bottom: 1px solid #e5e7eb;
 
+}
+
+.trending-item:last-child {
+    border-bottom: none;
 }
 
 .user-details {
