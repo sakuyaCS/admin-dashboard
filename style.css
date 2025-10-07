@@ -96,6 +96,16 @@ body {
 .greeting {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.greeting-avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-right: 10px;
 }
 .sidebar {
     grid-area: sidebar;
