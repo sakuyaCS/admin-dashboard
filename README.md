@@ -6,6 +6,10 @@ A dashboard interface built with HTML and CSS Grid for The Odin Project.
 
 This project demonstrates CSS Grid and Flexbox layout techniques. The dashboard includes a sidebar, header, project grid, and information panels.
 
+## Live Preview
+
+https://sakuyacs.github.io/admin-dashboard/
+
 ## Features
 
 - CSS Grid layout system
